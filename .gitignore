@@ -1,0 +1,7 @@
+# Exclude intermediate dirs and build dirs.
+.tmp
+dist
+
+# Exclude directories added by `npm` and `bower`.
+node_modules
+app/bower_components
