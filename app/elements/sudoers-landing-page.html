@@ -1,0 +1,179 @@
+<link rel="import" href="../bower_components/sudoers-website-elements/sudoers-landing-slide.html">
+<link rel="import" href="../bower_components/sudoers-website-elements/sudoers-parallax-header.html">
+<link rel="import" href="../bower_components/sudoers-website-elements/sudoers-landing-focus.html">
+
+<dom-module id="sudoers-landing-page">
+  <template>
+    <style is="custom-style">
+      :host {
+        --slide-fg-color:             #ffffff;
+        --slide-bg-color:             #373230;
+        --slide-vmargin:              30px;
+        --next-slide-border-height:   8px;
+        --accent-s-color:             #ffab55;
+        --accent-u-color:             #218eff;
+      }
+      a {
+        text-decoration:        none;
+        letter-spacing:         0.05em;
+        color:                  var(--accent-u-color);
+      }
+      sudoers-landing-slide.landing .slide-content a {
+        text-transform:         uppercase;
+      }
+      sudoers-landing-slide.sudoers sudoers-parallax-header {
+        --sudoers-parallax-background: { margin-top: -300px; };
+      }
+      sudoers-landing-slide.sudoers video {
+        width:                  1600px;
+        height:                 400px;
+      }
+    </style>
+    <!-- Logo heading slide. -->
+    <sudoers-landing-slide class='landing'>
+      <div class='slide-content'>
+        <img src='/images/logo.svg'>
+      </div>
+      <div class='slide-content'>
+        <div style='min-width: 280px; text-align: center'>
+          <a href='#'>SUDOERS</a>
+        </div>
+        <div style='min-width: 280px; text-align: center'>
+          <a href='#'>Dreamers</a>
+        </div>
+        <div style='min-width: 280px; text-align: center'>
+          <a href='#'>Makers</a>
+        </div>
+        <div style='min-width: 280px; text-align: center'>
+          <a href='#'>Thinkers</a>
+        </div>
+      </div>
+    </sudoers-landing-slide>
+    <!-- Sudoers slide. -->
+    <sudoers-landing-slide class='sudoers'>
+      <sudoers-parallax-header bg-amplitude='200' fg-amplitude='265' title='sudoers'>
+        <video autoplay loop>
+          <source src='/images/backgrounds/header-video.mp4' type='video/mp4'>
+        </video>
+      </sudoers-parallax-header>
+      <div class='slide-content'>
+        <sudoers-landing-focus image='/images/focuses/sudoers-1.jpg' title='Who?'>
+          <p>
+            Since its creation, SUDOERS is really only about geeks:
+            we love them, and they love us. Our goal is to grow but
+            stay picky regarding who will be part of the family.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/sudoers-2.jpg' title='How?'>
+          <p>
+            Because we're geeks, we love new stuff. Whenever something
+            creates the buzz, be sure that we will  already know a huge
+            bit about it, one of our objective being to always be learning.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/sudoers-3.jpg' title='Where?'>
+          <p>
+            We think that the sun is a big part of our happiness...
+            This is why the adventure started in Lisbon, Portugal.
+            It's a great city, the weather is awesome, and the beach isn't far away!
+          </p>
+        </sudoers-landing-focus>
+      </div>
+    </sudoers-landing-slide>
+    <!-- Dreamers slide. -->
+    <sudoers-landing-slide class='dreamers'>
+      <sudoers-parallax-header bg-amplitude='250' fg-amplitude='180' title='dreamers'>
+        <img alt='Parallax header background for the dreamers slide.' src='/images/backgrounds/street-desk.jpg'>
+      </sudoers-parallax-header>
+      <div class='slide-content'>
+        <sudoers-landing-focus image='/images/focuses/dreamers-1.jpg' title='Born to Geek'>
+          <p>
+            Programing is our second nature, we all started as kids and we continued
+            to feed our curiosity all the way up until now. What could be better than
+            passionate people to embody your project with a great implementation?
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/dreamers-2.jpg' title='Made with Love'>
+          <p>
+            Solving a problem is our ultimate gratification. This is
+            why everything we do is done with passion. We cherish each single
+            project we work on until our accomplishment feeling is fulfilled.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/dreamers-3.jpg' title='Innovative'>
+          <p>
+            As we work, we often find solutions in places where other people don't
+            necessarily look in. Being highly creative allows us to solve problems
+            very elegantly, every time.
+          </p>
+        </sudoers-landing-focus>
+      </div>
+    </sudoers-landing-slide>
+    <!-- Makers slide. -->
+    <sudoers-landing-slide class='makers'>
+      <sudoers-parallax-header bg-amplitude='350' fg-amplitude='180' title='makers'>
+        <img alt='Parallax header background for the makers slide.' src='/images/backgrounds/typing.jpg'>
+      </sudoers-parallax-header>
+      <div class='slide-content'>
+        <sudoers-landing-focus image='/images/focuses/makers-1.jpg' title='Project Management'>
+          <p>
+            At ius illum labores delicata. Tantas soleat lobortis cum no,
+            feugiat nusquam inciderint nec no, sit repudiare dissentias at.
+            Et his alienum ancillae, eu vix essent utroque accommodare.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/makers-2.jpg' title='Feature Rich'>
+          <p>
+            Lorem ipsum dolor sit amet, atqui accusata sed no, option imperdiet
+            cu eum. Vix eu delectus corrumpit. Cu qui minim iudicabit vulputate,
+            pri adhuc necessitatibus ad, eos nisl unum ei.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/makers-3.jpg' title='On Time Deliveries'>
+          <p>
+            Lorem ipsum dolor sit amet, atqui accusata sed no, option imperdiet cu
+            eum. Vix eu delectus corrumpit. Cu qui minim iudicabit vulputate, pri
+            adhuc necessitatibus ad, eos nisl unum ei.
+          </p>
+        </sudoers-landing-focus>
+      </div>
+    </sudoers-landing-slide>
+    <!-- Thinkers slide. -->
+    <sudoers-landing-slide class='thinkers'>
+      <sudoers-parallax-header bg-amplitude='400' fg-amplitude='180' title='thinkers'>
+        <img alt='Parallax header background for the thinkers slide.' src='/images/backgrounds/clockwork.jpg'>
+      </sudoers-parallax-header>
+      <div class='slide-content'>
+        <sudoers-landing-focus image='/images/focuses/thinkers-1.jpg' title='Tweakers'>
+          <p>
+            Lorem ipsum dolor sit amet, atqui accusata sed no, option
+            imperdiet cu eum. Vix eu delectus corrumpit. Cu qui minim
+            iudicabit vulputate, pri adhuc necessitatibus ad, eos nisl unum ei.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/thinkers-2.jpg' title='Solvers'>
+          <p>
+            Quo ex tation scripta accumsan, cu magna expetendis has, ius ex rebum
+            munere. Usu velit partem veritus te, nullam qualisque an est.
+            Cibo fugit consetetur eum in, enim ipsum minimum in cum.
+          </p>
+        </sudoers-landing-focus>
+        <sudoers-landing-focus image='/images/focuses/thinkers-3.jpg' title='Rulers'>
+          <p>
+            Laudem ullamcorper mea cu, labitur appareat gubergren ex mea, an
+            adipisci sententiae quaerendum sea. Te oporteat reprimique usu.
+            Erant animal nec te, deserunt interesset theophrastus ad mel.
+          </p>
+        </sudoers-landing-focus>
+      </div>
+    </sudoers-landing-slide>
+  </template>
+</dom-module>
+<script>
+  (function() {
+    'use strict';
+    Polymer({
+      is:     'sudoers-landing-page'
+    });
+  })();
+</script>
