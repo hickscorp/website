@@ -3,6 +3,6 @@
   "private":    true,
   "dependencies": {
     "polymer":                  "Polymer/polymer#^1.2.0",
-    "sudoers-website-elements": "ssh://git@Gogs.PierreQR.fr:10022/sudoers/website-elements.git"
+    "sudoers-website-elements": "git@github.com:sudoerslda/website-elements.git"
   }
 }
