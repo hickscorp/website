@@ -34,8 +34,8 @@
       <div class='slide-content'>
         <img src='/images/logo.svg'>
       </div>
-      <div class='slide-content'>
-        <div style='min-width: 280px; text-align: center'>
+      <div class='slide-content' style="padding-top:5%">
+        <!-- <div style='min-width: 280px; text-align: center'>
           <a href='#'>SUDOERS</a>
         </div>
         <div style='min-width: 280px; text-align: center'>
@@ -46,11 +46,14 @@
         </div>
         <div style='min-width: 280px; text-align: center'>
           <a href='#'>Thinkers</a>
-        </div>
+        </div> -->
+        <a href='#sudo' class="smoothScroll">
+          <img class='blink-img' src="/images/down-arrow.svg" height="150em">
+        </a>
       </div>
     </sudoers-landing-slide>
     <!-- Sudoers slide. -->
-    <sudoers-landing-slide class='sudoers'>
+    <sudoers-landing-slide class='sudoers' id='sudo'>
       <sudoers-parallax-header bg-amplitude='200' fg-amplitude='265' title='sudoers'>
         <video autoplay loop>
           <source src='/images/backgrounds/header-video.mp4' type='video/mp4'>
@@ -79,9 +82,14 @@
           </p>
         </sudoers-landing-focus>
       </div>
+      <div class='slide-content'>
+          <p>
+            <a href="mailto:contact@sudoers.work">contact@sudoers.work</a>
+          </p>
+      </div>
     </sudoers-landing-slide>
     <!-- Dreamers slide. -->
-    <sudoers-landing-slide class='dreamers'>
+   <!--  <sudoers-landing-slide class='dreamers'>
       <sudoers-parallax-header bg-amplitude='250' fg-amplitude='180' title='dreamers'>
         <img alt='Parallax header background for the dreamers slide.' src='/images/backgrounds/street-desk.jpg'>
       </sudoers-parallax-header>
@@ -108,9 +116,9 @@
           </p>
         </sudoers-landing-focus>
       </div>
-    </sudoers-landing-slide>
+    </sudoers-landing-slide> -->
     <!-- Makers slide. -->
-    <sudoers-landing-slide class='makers'>
+    <!-- <sudoers-landing-slide class='makers'>
       <sudoers-parallax-header bg-amplitude='350' fg-amplitude='180' title='makers'>
         <img alt='Parallax header background for the makers slide.' src='/images/backgrounds/typing.jpg'>
       </sudoers-parallax-header>
@@ -137,9 +145,9 @@
           </p>
         </sudoers-landing-focus>
       </div>
-    </sudoers-landing-slide>
+    </sudoers-landing-slide> -->
     <!-- Thinkers slide. -->
-    <sudoers-landing-slide class='thinkers'>
+   <!--  <sudoers-landing-slide class='thinkers'>
       <sudoers-parallax-header bg-amplitude='400' fg-amplitude='180' title='thinkers'>
         <img alt='Parallax header background for the thinkers slide.' src='/images/backgrounds/clockwork.jpg'>
       </sudoers-parallax-header>
@@ -165,8 +173,9 @@
             Erant animal nec te, deserunt interesset theophrastus ad mel.
           </p>
         </sudoers-landing-focus>
-      </div>
-    </sudoers-landing-slide>
+      </div> -->
+    <!-- </sudoers-landing-slide> -->
+    
   </template>
 </dom-module>
 <script>
